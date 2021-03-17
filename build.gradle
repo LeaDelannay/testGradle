@@ -25,9 +25,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-test {
-    useJUnitPlatform()
-}
-
-
 mainClassName = 'testgradle.App'
