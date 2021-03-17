@@ -25,9 +25,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-test {
-    useJUnitPlatform()
-    failFast = true
+tasks.withType(Test){
+    scanForTestClasses = false
+    include "**/*Test.class"
 }
 
 
