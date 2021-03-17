@@ -11,13 +11,8 @@ plugins {
 }
 
 repositories {
-
-    // Use jcenter for resolving dependencies.
-
-    // You can declare any Maven/Ivy/file repository here.
-
+    mavenCentral()
     jcenter()
-
 }
 
 dependencies {
@@ -35,5 +30,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
 }
+
+test {
+    useJUnitPlatform()
+}
+
 
 mainClassName = 'testgradle.App'
